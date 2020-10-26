@@ -1,15 +1,16 @@
 package com.example.cleanlist;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class WeekEntry {
 
-    public Date startDate;
-    public Date endDate;
+    public LocalDate startDate;
+    public LocalDate endDate;
     public String firstName;
     public String secondName;
 
-    public WeekEntry(Date startDate, Date endDate, String firstName, String secondName) {
+    public WeekEntry(LocalDate startDate, LocalDate endDate, String firstName, String secondName) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.firstName = firstName;
