@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 11), LocalDate.of(2021, 1, 17), "Manuel", "Luca"));
         Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 18), LocalDate.of(2021, 1, 14), "Jens", "Patrick"));
 
+        recyclerView.setHasFixedSize(true);
+
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
