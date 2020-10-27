@@ -28,18 +28,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        //DateFormat dateFormat = new SimpleDateFormat("mm-dd");
-        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM");
         // Writes data into list_item layout elements at position x
         WeekEntry currentWeek = Dataset.get(position);
 
-
-        // you can delete this comment
-
-        //String startDate = dateFormat.format(currentWeek.startDate);
-        //String endDate = dateFormat.format(currentWeek.endDate);
-        String startDate = currentWeek.startDate.toString();
-        String endDate = currentWeek.endDate.toString();
+        String startDate = currentWeek.startDate.format(formatter);
+        String endDate = currentWeek.endDate.format(formatter);
 
         holder.startDate.setText(startDate);
         holder.endDate.setText(endDate);
