@@ -2,16 +2,19 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="16dp"
+    style="@style/CardViewTheme"
+    android:theme="@style/CardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="8dp"
-    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     android:layout_marginRight="8dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        style="@style/CardViewItem"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,6 +27,7 @@
                 android:id="@+id/DateStart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                style="@style/CardViewItem"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="24sp"
@@ -33,6 +37,7 @@
                 android:id="@+id/FirstName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                style="@style/CardViewItem"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="24sp"
@@ -49,6 +54,7 @@
                 android:id="@+id/DateEnd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                style="@style/CardViewItem"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="24sp"
@@ -58,6 +64,7 @@
                 android:id="@+id/SecondName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                style="@style/CardViewItem"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="24sp"

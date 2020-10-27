@@ -28,7 +28,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LL");
         // Writes data into list_item layout elements at position x
         WeekEntry currentWeek = Dataset.get(position);
 
