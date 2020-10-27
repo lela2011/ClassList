@@ -39,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
         Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 4), LocalDate.of(2021, 1, 10), "Nicolas", "Alex"));
         Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 11), LocalDate.of(2021, 1, 17), "Manuel", "Luca"));
         Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 18), LocalDate.of(2021, 1, 14), "Jens", "Patrick"));
+        Dataset.add(new WeekEntry(LocalDate.of(2021, 1, 18), LocalDate.of(2021, 1, 14), "Jens", "Patrick"));
     }
 }
