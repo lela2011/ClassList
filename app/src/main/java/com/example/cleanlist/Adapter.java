@@ -33,6 +33,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         // Writes data into list_item layout elements at position x
         WeekEntry currentWeek = Dataset.get(position);
 
+
+        // you can delete this comment
+
         //String startDate = dateFormat.format(currentWeek.startDate);
         //String endDate = dateFormat.format(currentWeek.endDate);
         String startDate = currentWeek.startDate.toString();
